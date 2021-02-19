@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html{
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+body{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Roboto', sans-serif !important;
+    color: #dbdbdb !important;
+    background-color: #242526;
+}
+/*Header section ni nga styling*/
+#header{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 9rem;
+    background: linear-gradient(to bottom, rgba(22, 19, 16, 0.9) 50%, rgba(22, 19, 16, 1) 100%), url('images/laptop.jpg') ; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    }
+#profile-pic{
+    height: 220px; 
+    width: 220px;
+    box-shadow: 0px 0px 2px 2px #1111;
+    border-radius: 50%;
+   
+}
+#top-nav{
+    position: fixed; 
+    width: 100%; z-index:1;
+    padding-left:0;
+    padding-right: 3%;
+    padding-left: 3%;
+    
+}
+#mySidenav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    /* background-color: #18191a; 
+    background: linear-gradient(to top, rgba(15, 32, 39, 0.9) 25%, rgba(32, 58, 67, 0.9) 50%, rgba(44, 83, 100, 1) 100%), url('images/laptop.jpg') ; */
+    background: linear-gradient(to bottom, rgba(24, 25, 26, .96) 50%, rgba(22, 19, 16, .98) 100%) , url('images/laptop.jpg') ; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+.nav-link{
+    color: #fff !important;
+}
+.nav-link:hover{
+    color: grey !important;
+    font-size: 25.5px;
+}
+.nav-link, .navbar-brand {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+  #mySidenav .closebtn {
+    position: absolute;
+    top: -1px;
+    left: 4.31%;
+    font-size: 30px;
+  }
+  #link-resume{
+    color:cyan !important;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+  #link-resume:hover{
+    color:#5bc0de !important; 
+    font-size: 25.5px; 
+  }
+  #open-toggle{
+    font-size:30px;
+    cursor:pointer;
+  }
+  #logo-ko{
+    height: 100px;
+    width: 260px;
+  }
+  .closebtn{
+    right: 4%;
+    margin-top: 8px;
+  }
+  @media screen and (max-height: 450px) {
+    #mySidenav {
+    padding-top: 15px;}
+  }
+  #myLogo{
+    height: 35px;
+    width: 35px;
+  }
+
+/*inig fade in sa greetings sa header*/
+#intro{
+    text-align: center;
+    line-height: 30px !important;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
+}
+@keyframes fadein {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fadein{
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+#greetings h1{
+    height: 50px;
+    animation: left_to_right 2s ease;
+}
+@keyframes left_to_right{
+    from {margin-left: 15%; opacity: 0;};
+    to {margin-left: 0; opacity: 1;}
+}
+@keyframes left_to_right{
+    from {margin-left: -15%; opacity: 0;};
+    to {margin-left: 0; opacity: 1;}
+}
+.page-section{
+    background-color: #18191a !important;
+    height: 100%;
+    width: 100%;
+    padding: 6rem 0 1rem 0;
+    padding-left: 3%;
+    padding-right:3%;  
+}
+.page-section-footer{
+    background-color: #242526 !important;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 35px;
+    color: white;
+    padding-left: 3%;
+    padding-right:3%; 
+}
+#fb-profile, #ig-profile, #linked-profile{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+  }
+.jumbotron{
+    background-color: #242526;
+    box-shadow: 0px 0px 5px 0px;
+}
+.paragraph p, #intro , #education-p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 38px;
+}
+#skill-set li{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1px; 
+}
+#webdev-p, #uiUx-p, #webApp-p, #graphic-p, #contact-p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 25px; 
+}
+#skill-set{
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+#copyright{
+    font-size: 1.2em;
+}
+h1, p{
+    color: #fff;
+}
+#user-name, #email, #message{
+    background-color: #343a40;
+}
+/*sa education section summary */
+summary{
+    outline:none;
+}
+/*back to top button styling */
+#b2topButton {
+    position:fixed;
+    right:20px;
+    bottom:15px;
+    cursor:pointer;
+    width:45px;
+    height:45px;
+    background-color:rgba(0, 0, 0, .3);
+    border: 1.5px solid #17a2b8;
+    box-shadow: 1px 1px 2px grey;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+#b2topButton span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color: #17a2b8;
+}
+#b2topButton:hover {
+    background-color: #555;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}  /* end of back to top button styling */
